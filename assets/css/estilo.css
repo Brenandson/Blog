@@ -1,0 +1,92 @@
+/*configurações gerais*/
+body {
+    background: #fff;
+}
+
+/*
+Barra de navegação
+*/
+
+input[type="checkbox"] {    
+    height: 0;
+    width: 0;
+    visibility: hidden;    
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background: grey;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+}
+
+label::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked + label {
+    background-color: var(--color-headings);
+}
+
+input:checked + lable::after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:activate::after {
+    width: 45px;
+}
+
+/*
+Index
+área de intervalo
+*/
+#caixa {
+    margin-top: 30px;
+    background: #333333;
+    padding-top: 30px;
+}
+
+/*elementos de texto*/
+h2 {
+    text-align: center;
+    color: #fff;
+}
+
+h4 {
+    text-align: center;
+    color: #88f7ef;
+    font-size: 1.3em;
+}
+
+.texto-intervalo {
+    text-align: center;
+    color: #fff;
+    font-size: 1em;
+}
+
+.titulo-intervalo {
+    padding-bottom: 20px;
+}
+
+/*Rodapé*/
+
+footer p a {
+    margin: 10px;
+}
+
+.icones {
+    align-items: center;    
+}

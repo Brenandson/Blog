@@ -1,0 +1,17 @@
+a {
+    text-decoration: none;
+}
+
+.post-categorias {
+    list-style: none;    
+}
+
+ul li a:hover {
+    color: #D42427;
+}
+
+ul li a p {
+    color: #D42427;
+    text-align: center;
+}
+
